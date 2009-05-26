@@ -137,3 +137,38 @@ libUAPI_jni.so          0x9A500000
 librpc.so               0x9A400000
 libtrace_test.so        0x9A300000
 libsrec_jni.so          0x9A200000
+
+# glib
+libglib-2.0.so		0x9A100000
+libgthread-2.0.so	0x9A000000
+libgmodule-2.0.so	0x99F00000
+libgobject-2.0.so	0x99E00000
+
+# liboil
+liboil.so		0x99D00000
+
+# gstreamer (yay!)
+libgstreamer-0.10.so	0x99C00000
+libgstbase-0.10.so	0x99B00000
+libgstcontroller-0.10.so	0x99A00000
+libgstdataprotocol-0.10.so	0x99700000
+libgstnet-0.10.so	0x99600000
+
+# gst-plugin-base
+libgstaudio-0.10.so         0x97C00000
+libgstvideo-0.10.so         0x97B70000
+libgstriff-0.10.so          0x97B00000
+libgsttag-0.10.so           0x97A00000
+libgstpbutils-0.10.so	    0x97900000
+libgstrtp-0.10.so	    0x97800000
+libgstrtsp-0.10.so	    0x97700000
+libgstinterfaces-0.10.so    0x97600000
+libgstapp-0.10.so           0x97500000
+
+# dependencies for gstreamer
+
+#libogg
+libogg.so		    0x96F00000
+
+#libandroidgst
+libgst_player.so    0x96E00000
