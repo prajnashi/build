@@ -230,6 +230,14 @@ ifneq ($(filter eng tests,$(TARGET_BUILD_VARIANT)),)
     endif
   endif
 endif
+# Install a vold.conf file is one's not already being installed.
+ifeq (,$(filter %:system/etc/vold.conf, $(PRODUCT_COPY_FILES)))
+  PRODUCT_COPY_FILES += \
+	development/data/etc/vold.conf:system/etc/vold.conf
+  ifeq ($(filter eng tests,$(TARGET_BUILD_VARIANT)),)
+    $(warning implicitly installing vold.conf)
+  endif
+endif	 
 
 ADDITIONAL_BUILD_PROPERTIES += net.bt.name=Android
 
